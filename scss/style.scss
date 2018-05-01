@@ -1,0 +1,197 @@
+@import "fonts";
+$main_colour: #259786;
+$bg_colour: #ffffff;
+$main_font_size: 14px;
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+//HEADER
+header {
+  background-color: $bg_colour;
+  .container {
+    max-width: 960px;
+    margin: auto;
+    .library-head {
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        a {
+        padding: 32px 0;
+        font-family: 'arvobold', serif;
+        font-size: 25px;
+        color: #000000;
+        display: inline-block;
+        }
+      }
+      .navbar {
+        ul {
+          text-align: right;
+          margin-top: 10px;
+          margin-bottom: 30px;
+          li {
+            display: inline;
+            margin-left: 30px;
+            a {
+              font-family: 'signikabold', sans-serif;
+              color: $main_colour;
+              font-size: $main_font_size;
+            }
+          }
+        }
+        p {
+          font-family: 'signikaregular', sans-serif;
+          font-size: 16px;
+          color: $main_colour;
+        }
+      }
+    }
+  }
+}
+//SECTION
+section {
+  .library-cnt {
+    background-color: #e69a68;
+    .container {
+      max-width: 960px;
+      margin: auto;
+      .layout-1 {
+        display: flex;
+        justify-content: center;
+        .start {
+          text-align: right;
+          font-family: 'signikabold', sans-serif;
+          font-size: 33px;
+          color: $bg_colour;
+          line-height: 50px;
+          align-self: center;
+        }
+        button {
+          display: block;
+          font-family: 'signikabold', sans-serif;
+          font-size: 45px;
+          color: $bg_colour;
+          background: #d66114;
+          @include border-radius(9px);
+          padding: 24px 20px;
+          line-height: 45px;
+          margin: 26px 160px 34px 45px;
+          border: none;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .library-content {
+    background: #d68854;
+    .container {
+      max-width: 960px;
+      margin: auto;
+      .device {
+        text-align: center;
+        img {
+          padding: 23px 0 16px 0;
+        }
+        h3 {
+          font-family: 'signikabold', sans-serif;
+          font-size: 20px;
+          color: $bg_colour;
+          padding-bottom: 22px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+//ARTICLE
+article {
+  background: $bg_colour;
+  .container {
+    max-width: 960px;
+    margin: auto;
+    .title {
+      padding: 38px 0 27px 0;
+      h2 {
+        font-family: 'signikabold', sans-serif;
+        font-size: 30px;
+        color: $main_colour;
+        padding-bottom: 42px;
+        text-transform: uppercase;
+      }
+      hr {
+        max-width: 225px;
+        border-bottom: 4px solid $main_colour;
+      }
+    }
+    .text {
+      display: flex;
+      .selection, .download {
+        flex-basis: 50%;
+        padding: 19px 20px 38px 0;
+        h4 {
+          font-family: 'signikabold', sans-serif;
+          font-size: 16px;
+          color: $main_colour;
+        }
+        p {
+          font-family: 'signikaregular', sans-serif;
+          font-size: $main_font_size;
+          color: $main_colour;
+          line-height: 20px;
+          padding-top: 23px;
+        }
+      }
+    }
+  }
+}
+//FOOTER
+footer {
+  background: $main_colour;
+  .container {
+    max-width: 960px;
+    margin: auto;
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 51px 0 43px 0;
+      .block-1 {
+        font-family: 'signikaregular', sans-serif;
+        font-size: 12px;
+        color: $bg_colour;
+      }
+      .block-2 {
+        ul {
+          text-align: right;
+          li {
+            display: inline;
+            border-left: 1px solid $bg_colour;
+            padding-left: 17px;
+            padding-right: 18px;
+            a {
+              font-family: 'signikaregular', sans-serif;
+              color: $bg_colour;
+              font-size: $main_font_size;
+            }
+          }
+          li:first-child {
+            border: none;
+            padding-left: 0;
+          }
+          li:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
