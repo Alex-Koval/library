@@ -23,18 +23,19 @@
   list-style: none;
 }
 
-header {
-  background-color: #ffffff;
-}
-header .container {
+.container, header .container, section .library-cnt .container, section .library-content .container, article .container, footer .container {
   max-width: 960px;
   margin: auto;
+}
+
+header {
+  background-color: #ffffff;
 }
 header .container .library-head {
   display: flex;
   justify-content: space-between;
 }
-header .container .library-head .logo a {
+header .container .library-head .logo {
   padding: 32px 0;
   font-family: 'arvobold', serif;
   font-size: 25px;
@@ -51,7 +52,7 @@ header .container .library-head .navbar ul li {
   margin-left: 30px;
 }
 header .container .library-head .navbar ul li a {
-  font-family: 'signikabold', sans-serif;
+  font-family: "signikabold", sans-serif;
   color: #259786;
   font-size: 14px;
 }
@@ -64,17 +65,13 @@ header .container .library-head .navbar p {
 section .library-cnt {
   background-color: #e69a68;
 }
-section .library-cnt .container {
-  max-width: 960px;
-  margin: auto;
-}
 section .library-cnt .container .layout-1 {
   display: flex;
   justify-content: center;
 }
 section .library-cnt .container .layout-1 .start {
   text-align: right;
-  font-family: 'signikabold', sans-serif;
+  font-family: "signikabold", sans-serif;
   font-size: 33px;
   color: #ffffff;
   line-height: 50px;
@@ -82,7 +79,7 @@ section .library-cnt .container .layout-1 .start {
 }
 section .library-cnt .container .layout-1 button {
   display: block;
-  font-family: 'signikabold', sans-serif;
+  font-family: "signikabold", sans-serif;
   font-size: 45px;
   color: #ffffff;
   background: #d66114;
@@ -99,10 +96,6 @@ section .library-cnt .container .layout-1 button {
 section .library-content {
   background: #d68854;
 }
-section .library-content .container {
-  max-width: 960px;
-  margin: auto;
-}
 section .library-content .container .device {
   text-align: center;
 }
@@ -110,7 +103,7 @@ section .library-content .container .device img {
   padding: 23px 0 16px 0;
 }
 section .library-content .container .device h3 {
-  font-family: 'signikabold', sans-serif;
+  font-family: "signikabold", sans-serif;
   font-size: 20px;
   color: #ffffff;
   padding-bottom: 22px;
@@ -120,15 +113,11 @@ section .library-content .container .device h3 {
 article {
   background: #ffffff;
 }
-article .container {
-  max-width: 960px;
-  margin: auto;
-}
 article .container .title {
   padding: 38px 0 27px 0;
 }
 article .container .title h2 {
-  font-family: 'signikabold', sans-serif;
+  font-family: "signikabold", sans-serif;
   font-size: 30px;
   color: #259786;
   padding-bottom: 42px;
@@ -146,7 +135,7 @@ article .container .text .selection, article .container .text .download {
   padding: 19px 20px 38px 0;
 }
 article .container .text .selection h4, article .container .text .download h4 {
-  font-family: 'signikabold', sans-serif;
+  font-family: "signikabold", sans-serif;
   font-size: 16px;
   color: #259786;
 }
@@ -160,10 +149,6 @@ article .container .text .selection p, article .container .text .download p {
 
 footer {
   background: #259786;
-}
-footer .container {
-  max-width: 960px;
-  margin: auto;
 }
 footer .container .info {
   display: flex;
